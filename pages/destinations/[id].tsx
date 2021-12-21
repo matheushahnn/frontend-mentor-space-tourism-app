@@ -30,7 +30,7 @@ export default function Destination({ id }: { id: string }) {
                     Number(destinationId)
                   ].name.toLocaleLowerCase()
                     ? 'translate-x-0 lg:scale-100 lg:animate-scale-planet'
-                    : 'translate-x-[100%] lg:animate-scale-planet-down'
+                    : 'translate-x-[100%] lg:scale-0 lg:animate-scale-planet-down'
                 } transition-[transform] duration-[1200ms] ease-move-planet lg:ease-linear`}
                 src={value?.images.png || ''}
                 alt="Image of"

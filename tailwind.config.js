@@ -39,7 +39,7 @@ module.exports = {
         },
         scalationDown: {
           from: {
-            transform: 'scale(1)',
+            transform: 'scale(1), translate(0)',
           },
           to: {
             transform: 'scale(0)',
