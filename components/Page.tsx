@@ -15,7 +15,9 @@ export default function Page({
   title: string
 }) {
   return (
-    <div className={`min-h-screen bg-center bg-cover ${backgroundImages}`}>
+    <div
+      className={`min-h-screen bg-center bg-cover bg-zinc-800 ${backgroundImages}`}
+    >
       <Layout>
         <Navbar />
         <div className="lg:max-w-7xl lg:mx-auto">

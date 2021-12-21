@@ -18,7 +18,7 @@ module.exports = {
         'move-planet': 'cubic-bezier(1, -0.43, 0.1, -0.25)',
       },
       animation: {
-        'ping-once': 'ping 1.3s cubic-bezier(1, 2, 0, 1) infinite',
+        'ping-once': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
       keyframes: {
         ping: {
