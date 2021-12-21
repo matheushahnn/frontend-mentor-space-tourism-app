@@ -18,9 +18,9 @@ export default function Destination({ id }: { id: string }) {
     sm:bg-[url('../public/images/destination/background-destination-tablet.jpg')] 
     lg:bg-[url('../public/images/destination/background-destination-desktop.jpg')]`}"
     >
-      <div className="mt-8 flex justify-center items-center flex-wrap px-6 sm:mt-16 lg:px-0">
-        <div className="flex justify-center flex-1 sm:flex-[1_0_500px] lg:flex-[1_0_450px]">
-          <div className="w-96 h-40 relative sm:h-[450px] lg:h-[445px] lg:w-[445px]">
+      <div className="mt-8 flex flex-col justify-center items-center flex-wrap lg:flex-row sm:mt-16 lg:px-0">
+        <div className="flex w-full justify-center flex-1 max-w-full lg:flex-[1_0_450px]">
+          <div className="w-full h-40 relative sm:h-[19rem] lg:h-[445px] lg:w-[445px]">
             {destinationList.map((value: IDestination) => (
               <Image
                 priority
@@ -29,9 +29,9 @@ export default function Destination({ id }: { id: string }) {
                   destinationList[
                     Number(destinationId)
                   ].name.toLocaleLowerCase()
-                    ? 'translate-x-0'
-                    : 'translate-x-96 lg:translate-x-[1000px]'
-                } transition-[transform] duration-[1200ms] ease-move-planet`}
+                    ? 'translate-x-0 lg:scale-100 lg:animate-scale-planet'
+                    : 'translate-x-[100%] lg:animate-scale-planet-down'
+                } transition-[transform] duration-[1200ms] ease-move-planet lg:ease-linear`}
                 src={value?.images.png || ''}
                 alt="Image of"
                 layout="fill"
@@ -41,7 +41,7 @@ export default function Destination({ id }: { id: string }) {
             ))}
           </div>
         </div>
-        <div className="flex flex-1 flex-col items-center sm:flex-[1_0_500px] lg:items-start lg:flex-[1_0_200px]">
+        <div className="flex flex-1 flex-col items-center px-6 sm:max-w-xl lg:items-start lg:flex-[1_0_200px]">
           <ul className="mt-5 flex space-x-6 sm:mt-14 lg:mt-0">
             {destinationList.map((value: IDestination, index) => (
               <li
@@ -71,7 +71,7 @@ export default function Destination({ id }: { id: string }) {
             {destination?.description}
           </span>
           <hr className="text-thirdy-text-color w-full mt-9" />
-          <div className="flex flex-col sm:flex-row sm:flex-wrap mt-8 w-full">
+          <div className="flex flex-col pb-5 sm:flex-row sm:flex-wrap mt-8 w-full">
             <div className="flex flex-col items-center  flex-1 sm:flex-[1_0_200px] lg:items-start lg:flex-[1_0_0]">
               <span className="text-secondary-text-color uppercase text-sm font-barlow tracking-widest">
                 AVG. Distance

@@ -19,12 +19,30 @@ module.exports = {
       },
       animation: {
         'ping-once': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'scale-planet': 'scalation 3s linear',
+        'scale-planet-down': 'scalationDown 0.30s linear',
       },
       keyframes: {
         ping: {
           '75%, 100%': {
             transform: 'scale(1.5)',
             opacity: 0.1,
+          },
+        },
+        scalation: {
+          '0%, 20%': {
+            transform: 'scale(0)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+          },
+        },
+        scalationDown: {
+          from: {
+            transform: 'scale(1)',
+          },
+          to: {
+            transform: 'scale(0)',
           },
         },
       },
