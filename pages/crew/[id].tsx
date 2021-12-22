@@ -40,7 +40,7 @@ export default function Crew({ id }: { id: any }) {
                   crewList[crewId].name.toLowerCase()
                     ? 'translate-x-0'
                     : 'translate-x-96 sm:translate-x-[1000px]'
-                } transition-[transform] duration-[1200ms] ease-move-planet sm:translate-y-20 absolute lg:-translate-y-0 lg:top-[40%]`}
+                } transition-[transform] duration-[1200ms] ease-move-planet sm:translate-y-20 absolute lg:-translate-y-0 lg:ease-linear lg:top-[40%]`}
                 src={value?.images.webp || ''}
                 alt="Image of"
                 layout="fill"
