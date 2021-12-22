@@ -68,14 +68,14 @@ export default function Crew({ id }: { id: any }) {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col items-center sm:max-w-7xl lg:max-w-full lg:items-start lg:flex-1">
+          <div className="flex flex-col items-center sm:max-w-7xl lg:items-start lg:max-w-md lg:flex-1">
             <span className="mt-9 font-bellefair text-white text-lg uppercase opacity-50 tracking-widest sm:text-2xl lg:text-3xl">
               {crew?.role}
             </span>
             <span className="mt-4 font-bellefair text-white text-2xl uppercase sm:text-4xl lg:text-5xl">
               {crew?.name}
             </span>
-            <span className="mt-2 font-barlow text-secondary-text-color text-sm leading-6 text-center sm:text-base sm:mt-4 lg:text-left lg:text-lg lg:max-w-md">
+            <span className="mt-2 font-barlow text-secondary-text-color text-sm leading-6 text-center sm:text-base sm:mt-4 lg:text-left lg:text-lg lg:min-h-[10.5rem] lg:max-w-md">
               {crew?.bio}
             </span>
           </div>
