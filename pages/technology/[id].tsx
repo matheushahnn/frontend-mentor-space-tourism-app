@@ -15,7 +15,8 @@ export default function Technology({ id }: { id: any }) {
 
   return (
     <Page
-      title="Space launch 101"
+      title="Technology"
+      subTitle="Space launch 101"
       number={3}
       backgroundImages="bg-[url('../public/images/technology/background-technology-mobile.jpg')] 
       sm:bg-[url('../public/images/technology/background-technology-tablet.jpg')] 

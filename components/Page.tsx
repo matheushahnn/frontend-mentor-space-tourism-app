@@ -5,6 +5,7 @@ import Navbar from './navbar'
 
 export default function Page({
   title = '',
+  subTitle = '',
   backgroundImages = '',
   number = 1,
   children,
@@ -13,15 +14,16 @@ export default function Page({
   backgroundImages: string
   number: number
   title: string
+  subTitle: string
 }) {
   return (
     <div
       className={`min-h-screen bg-center bg-cover bg-zinc-800 ${backgroundImages}`}
     >
-      <Layout>
+      <Layout title={title}>
         <Navbar />
         <div className="lg:max-w-7xl lg:mx-auto">
-          <Title title={title} number={number} />
+          <Title title={subTitle} number={number} />
           {children}
         </div>
       </Layout>

@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <div
       className={`pb-20 min-h-screen bg-[url('../public/images/home/background-home-mobile.jpg')] sm:bg-[url('../public/images/home/background-home-tablet.jpg')] lg:bg-[url('../public/images/home/background-home-desktop.jpg')] bg-center bg-cover`}
     >
-      <Layout>
+      <Layout title="Home">
         <Navbar />
         <div className="mt-8 flex flex-col items-center px-6 sm:px-40 sm:mx-auto sm:mt-24 lg:flex-row lg:mt-30 lg:px-0 lg:items-end lg:max-w-7xl lg:mx-auto">
           <div className="flex flex-col items-center lg:items-start flex-1 lg:max-w-md">

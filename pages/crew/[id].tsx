@@ -15,7 +15,8 @@ export default function Crew({ id }: { id: any }) {
 
   return (
     <Page
-      title="Meet your crew"
+      title="Crew"
+      subTitle="Meet your crew"
       number={2}
       backgroundImages="bg-[url('../public/images/crew/background-crew-mobile.jpg')] 
     sm:bg-[url('../public/images/crew/background-crew-tablet.jpg')] 

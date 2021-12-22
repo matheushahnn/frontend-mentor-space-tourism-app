@@ -12,7 +12,8 @@ export default function Destination({ id }: { id: string }) {
 
   return (
     <Page
-      title="Pick your destination"
+      title="Destinations"
+      subTitle="Pick your destination"
       number={1}
       backgroundImages="bg-[url('../public/images/destination/background-destination-mobile.jpg')] 
     sm:bg-[url('../public/images/destination/background-destination-tablet.jpg')] 
