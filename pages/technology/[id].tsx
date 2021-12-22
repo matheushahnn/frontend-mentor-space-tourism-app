@@ -44,21 +44,22 @@ export default function Technology({ id }: { id: any }) {
         </div>
         <ul className="mt-9 flex space-x-6 lg:flex-col lg:space-x-0 lg:space-y-9">
           {technologyList.map((value: ITechnology, index) => (
-            // eslint-disable-next-line @next/next/link-passhref
-            <Link href={`/technology/${index}`} shallow key={value.name}>
-              <li
-                className={`cursor-pointer bg-white rounded-full w-10 h-10 relative flex items-center justify-center transition-opacity duration-500 lg:w-20 lg:h-20 lg:text-3xl ${
-                  value.name.toLowerCase() ===
-                  technologyList[TechnologyId].name.toLowerCase()
-                    ? ''
-                    : 'opacity-20 hover:opacity-50'
-                }`}
-                key={value.name}
-                onClick={() => setTechnology(index)}
-              >
-                <span className="absolute">{Number(index) + 1}</span>
-              </li>
-            </Link>
+            <li key={value.name}>
+              <Link href={`/technology/${index}`} shallow>
+                <a
+                  className={`cursor-pointer bg-white rounded-full w-10 h-10 relative flex items-center justify-center transition-opacity duration-500 lg:w-20 lg:h-20 lg:text-3xl ${
+                    value.name.toLowerCase() ===
+                    technologyList[TechnologyId].name.toLowerCase()
+                      ? ''
+                      : 'opacity-20 hover:opacity-50'
+                  }`}
+                  key={value.name}
+                  onClick={() => setTechnology(index)}
+                >
+                  <span className="absolute">{Number(index) + 1}</span>
+                </a>
+              </Link>
+            </li>
           ))}
         </ul>
         <div className="mt-9 px-6 flex flex-col items-center sm:max-w-lg lg:items-start lg:px-0">

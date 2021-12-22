@@ -71,44 +71,44 @@ export default function Navbar() {
         </div>
         <div className="mt-10 flex flex-col space-y-9 ">
           <Link href="/">
-            <div className="px-6 flex space-x-5 cursor-pointer">
+            <a className="px-6 flex space-x-5 cursor-pointer">
               <span className="font-barlow uppercase text-2xl text-white font-bold tracking-widest">
                 00
               </span>
               <span className="font-barlow uppercase text-2xl text-white tracking-widest">
                 Home
               </span>
-            </div>
+            </a>
           </Link>
           <Link href="/destinations/0">
-            <div className="px-6 flex space-x-5 cursor-pointer">
+            <a className="px-6 flex space-x-5 cursor-pointer">
               <span className="font-barlow uppercase text-2xl text-white font-bold tracking-widest">
                 01
               </span>
               <span className="font-barlow uppercase text-2xl text-white tracking-widest">
                 Destination
               </span>
-            </div>
+            </a>
           </Link>
           <Link href="/crew/0">
-            <div className="px-6 flex space-x-5 cursor-pointer">
+            <a className="px-6 flex space-x-5 cursor-pointer">
               <span className="font-barlow uppercase text-2xl text-white font-bold tracking-widest">
                 02
               </span>
               <span className="font-barlow uppercase text-2xl text-white tracking-widest">
                 Crew
               </span>
-            </div>
+            </a>
           </Link>
           <Link href="/technology/0">
-            <div className="px-6 flex space-x-5 cursor-pointer">
+            <a className="px-6 flex space-x-5 cursor-pointer">
               <span className="font-barlow uppercase text-2xl text-white font-bold tracking-widest">
                 03
               </span>
               <span className="font-barlow uppercase text-2xl text-white tracking-widest">
                 Technology
               </span>
-            </div>
+            </a>
           </Link>
         </div>
       </div>

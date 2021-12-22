@@ -52,11 +52,10 @@ export default function Crew({ id }: { id: any }) {
         </div>
         <hr className="text-thirdy-text-color w-full sm:hidden" />
         <div className="flex flex-col items-center sm:flex-col-reverse lg:items-start lg:mt-16 flex-1">
-          <ul className="mt-9 flex space-x-6 sm:mt-10">
+          <div className="mt-9 flex space-x-6 sm:mt-10">
             {crewList.map((value: ICrew, index) => (
-              // eslint-disable-next-line @next/next/link-passhref
               <Link href={`/crew/${index}`} shallow key={value.name}>
-                <li
+                <a
                   className={`cursor-pointer bg-white rounded-full w-3 h-3 pb-2 transition-opacity duration-500 ${
                     value.name.toLowerCase() ===
                     crewList[crewId].name.toLowerCase()
@@ -68,7 +67,7 @@ export default function Crew({ id }: { id: any }) {
                 />
               </Link>
             ))}
-          </ul>
+          </div>
           <div className="flex flex-col items-center sm:max-w-7xl lg:max-w-full lg:items-start lg:flex-1">
             <span className="mt-9 font-bellefair text-white text-lg uppercase opacity-50 tracking-widest sm:text-2xl lg:text-3xl">
               {crew?.role}
